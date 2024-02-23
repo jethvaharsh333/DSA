@@ -41,7 +41,5 @@ int traffic(int n, int m, vector<int> vehicle) {
 }
 
 // Test case
-/*
 7 1
 1 0 1 1 1 0 1
-*/
