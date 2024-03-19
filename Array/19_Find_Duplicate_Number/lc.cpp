@@ -19,3 +19,6 @@ public:
         return slow;
     }
 };
+
+
+// YOU CAN USE SORTING APPROACH 
