@@ -1,1 +1,2 @@
 1] Implement stack using arrays
+2] Valid parenthesis
