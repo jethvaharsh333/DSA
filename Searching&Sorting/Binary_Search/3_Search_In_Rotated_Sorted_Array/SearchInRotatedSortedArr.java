@@ -1,10 +1,9 @@
 class SearchInRotatedSortedArr {
     public static void main(String[] args) {
         int[] arr = {4,5,6,7,3};
-		int targetint = 7;
+	int targetint = 7;
 
         int ans = search(arr, targetint);
-
         System.out.println(ans);
     }
 
@@ -14,6 +13,7 @@ class SearchInRotatedSortedArr {
 
         while (left <= right) {
             int mid = left + (right-left)/2;
+	    // int mid = (left + right) >> 1;
 
             if (nums[mid] == target) {
                 return mid;
