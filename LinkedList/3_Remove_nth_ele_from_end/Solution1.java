@@ -11,7 +11,7 @@
  * }
  */ 
 
-class Solution {
+class Solution1 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         int count = 1;
         ListNode temp = head;
