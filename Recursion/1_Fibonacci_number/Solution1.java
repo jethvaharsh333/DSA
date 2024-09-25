@@ -1,4 +1,4 @@
-class Solution {
+class Solution1 {
     public int fib(int n) {
         int[] dp = Arrays.stream(new int[n+1]).map(e -> -1).toArray();
         return fib(n, dp);
