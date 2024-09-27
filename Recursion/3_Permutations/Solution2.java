@@ -1,4 +1,4 @@
-// 1ms, 44.3MB
+// 0ms, 44.3MB
 
 class Solution2 {
     public List<List<Integer>> permute(int[] nums) {
