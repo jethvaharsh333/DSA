@@ -2,30 +2,30 @@
 
 class Solution1 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        int n=candidates.length;
-
-        List<Integer> adding=new ArrayList<>();
-        List<List<Integer>> ans=new ArrayList<>();
-
-        f(candidates,target,n,0,adding,ans);
-
-        return ans;
+        List<Integer> li = new ArrayList<>();
+        return ans(li, candidates, 0, 0, target);
     }
-    
-    public static void f(int[] candidates, int target, int n, int idx,List<Integer> adding,List<List<Integer>> ans){
-        if(idx==n){
-            if(target==0){
-                ans.add(new ArrayList<>(adding));
-            }
-            return;
+
+    private List<List<Integer>> ans(List<Integer> li, int[] candidates, int sum, int i, int target) {
+        if (sum > target) {
+            return new ArrayList<>();
         }
         
-        if(candidates[idx]<=target){
-            adding.add(candidates[idx]);
-            f(candidates,target-candidates[idx],n,idx,adding,ans);
-            adding.remove(adding.size()-1);
+        if (sum == target) {
+            List<List<Integer>> list = new ArrayList<>();
+            list.add(new ArrayList<>(li));
+            return list;
         }
 
-        f(candidates,target,n,idx+1,adding,ans);
+        List<List<Integer>> ans = new ArrayList<>();
+
+        while (i < candidates.length) {
+            li.add(candidates[i]);
+            ans.addAll(ans(li, candidates, sum + candidates[i], i, target));
+            li.remove(li.size() - 1); // backtrack
+            i++;
+        }
+
+        return ans;
     }
 }
