@@ -1,3 +1,4 @@
+// 1087ms, 19.02beats
 class Solution1 {
     public int subarraySum(int[] nums, int k) {
         int count = 0;
