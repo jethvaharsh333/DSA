@@ -1,4 +1,4 @@
-// O(n) [OPTIMAL SOLUTION]
+// O(1) [OPTIMAL SOLUTION]
 class Solution2 {
     public boolean isValidSudoku(char[][] board) {
        boolean[][] rows = new boolean[9][9];
