@@ -1,4 +1,4 @@
-// O(n)
+// O(1)
 class Solution1 {
     public boolean isValidSudoku(char[][] board) {
         HashSet<Character>[] rows = new HashSet[9];
