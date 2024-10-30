@@ -1,4 +1,4 @@
-// O(n) [OPTIMAL SOLUTION]
+// O(nlogn)
 class Solution2 {
     public int longestConsecutive(int[] nums) {
         int result = 0;
