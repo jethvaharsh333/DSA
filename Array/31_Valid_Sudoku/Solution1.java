@@ -1,5 +1,5 @@
 // O(n)
-class Solution {
+class Solution1 {
     public boolean isValidSudoku(char[][] board) {
         HashSet<Character>[] rows = new HashSet[9];
         HashSet<Character>[] cols = new HashSet[9];
@@ -11,8 +11,8 @@ class Solution {
             squares[i] = new HashSet<>();
         }
 
-        for(int r=0 ; r<board[0].length ; r++){
-            for(int c=0 ; c<board[0].length ; c++){
+        for(int r=0 ; r<9 ; r++){
+            for(int c=0 ; c<9 ; c++){
                 char num = board[r][c];
                 if(num == '.') continue;
 
