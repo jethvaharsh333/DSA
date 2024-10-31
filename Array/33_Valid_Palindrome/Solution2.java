@@ -1,4 +1,4 @@
-// O(n), 100% beats
+// O(n), 100% beats & OPTIMAL
 class Solution2 {
     public boolean isPalindrome(String s) {
         if (s == null || s.length() == 1)
