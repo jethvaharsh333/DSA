@@ -1,4 +1,4 @@
-// O(nlogm)
+// O(n^2)
 class Solution2 {
     public List<List<Integer>> threeSum(int[] nums) {
         int len = nums.length;
