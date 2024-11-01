@@ -1,3 +1,4 @@
+// Time complexity: O(n^2); Space complexity: O(n); 92.37% beats & OPTIMAL SOLUTION
 class Solution3 {
     public List<List<Integer>> threeSum(int[] nums) {
         int len = nums.length;
