@@ -1,27 +1,26 @@
-// time complexity : O(n), space complexity : O(n)
+// time complexity : O(n), space complexity : O(1)
 class Solution1 {
-    public int trap(int[] height) {
-        int len = height.length;
-        Stack<Integer> stack = new Stack<>();
-        int result = 0;
-
-        for (int i = 0; i < len; i++) {
-            // Process bars to calculate trapped water
-            while (!stack.isEmpty() && height[i] > height[stack.peek()]) {
-                int top = stack.pop();
-                
-                // If stack is empty after popping, break as no left boundary exists
-                if (stack.isEmpty()) break;
-                
-                int distance = i - stack.peek() - 1;  // Calculate width of water area
-                int boundedHeight = Math.min(height[i], height[stack.peek()]) - height[top];  // Height of water
-                result += distance * boundedHeight;  // Add trapped water
+    public int maxProfit(int[] prices) {
+        int len = prices.length;
+        if(prices==null || len<=1){
+            return 0;
+        }
+        int buy=prices[0], sell=prices[0];
+        int maxProfit = 0;
+        
+        for(int i=1 ; i<len ; i++){
+            if(buy > prices[i]){
+                buy = prices[i];
+                sell = prices[i];
+            }else if(sell < prices[i]){
+                sell = prices[i];
+            }else{
+                continue;
             }
-            
-            // Push current index to stack
-            stack.push(i);
+            int currProfit = sell - buy;
+            if(currProfit > maxProfit) maxProfit = currProfit;
         }
 
-        return result;
+        return maxProfit;
     }
 }
