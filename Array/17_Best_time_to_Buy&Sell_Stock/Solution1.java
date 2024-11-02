@@ -1,28 +1,25 @@
-// time complexity : O(n), space complexity : O(1)
+// time complexity : O(n), space complexity : O(n)
 class Solution1 {
     public int trap(int[] height) {
-        int left = 0, right = height.length - 1;  // Initialize two pointers
-        int leftMax = 0, rightMax = 0;  // Track max height from both ends
+        int len = height.length;
+        Stack<Integer> stack = new Stack<>();
         int result = 0;
 
-        while (left < right) {
-            if (height[left] < height[right]) {
-                // If left height is less, water is trapped based on leftMax
-                if (height[left] >= leftMax) {
-                    leftMax = height[left];
-                } else {
-                    result += leftMax - height[left];
-                }
-                left++;
-            } else {
-                // If right height is less, water is trapped based on rightMax
-                if (height[right] >= rightMax) {
-                    rightMax = height[right];
-                } else {
-                    result += rightMax - height[right];
-                }
-                right--;
+        for (int i = 0; i < len; i++) {
+            // Process bars to calculate trapped water
+            while (!stack.isEmpty() && height[i] > height[stack.peek()]) {
+                int top = stack.pop();
+                
+                // If stack is empty after popping, break as no left boundary exists
+                if (stack.isEmpty()) break;
+                
+                int distance = i - stack.peek() - 1;  // Calculate width of water area
+                int boundedHeight = Math.min(height[i], height[stack.peek()]) - height[top];  // Height of water
+                result += distance * boundedHeight;  // Add trapped water
             }
+            
+            // Push current index to stack
+            stack.push(i);
         }
 
         return result;
