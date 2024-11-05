@@ -1,3 +1,4 @@
+// Time complexity: O(n^2); Space Complexity: O(1); OPTIMAL SOLUTION
 class Solution3 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int[] re = new int[nums.length+1-k];
