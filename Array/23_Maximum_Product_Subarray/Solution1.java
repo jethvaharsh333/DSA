@@ -1,4 +1,8 @@
 // Time complexity: O(n); Space Complexity: O(1)
+/*
+Products can vary widely and reset with zeroes, which makes sliding windows inefficient because you'd constantly reinitialize or recompute
+products. Sliding window doesn’t handle discontinuities (like zeroes) or complex conditions (like alternating signs in maximum product subarrays) well.
+*/
 class Solution1 {
     public int maxProduct(int[] nums) {
         int n = nums.length;
