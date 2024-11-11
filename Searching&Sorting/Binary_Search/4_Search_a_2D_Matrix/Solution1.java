@@ -1,3 +1,4 @@
+// Time complexity: O(log(m*n)); Space Complexity: O(1); OPTIMAL SOLUTION
 class Solution1 {
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return false;
