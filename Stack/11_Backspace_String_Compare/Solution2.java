@@ -1,4 +1,4 @@
-// Time complexity: O(m+n), Space complexity: O(n)
+// Time complexity: O(m+n), Space complexity: O(n), OPTIMAL SOLUTION
 class Solution2 {
     public boolean backspaceCompare(String s, String t) {
         char[] sChars = s.toCharArray();
