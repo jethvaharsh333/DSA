@@ -1,3 +1,4 @@
+// Time complexity: O(n+m); Space complexity: O(n+m);
 class Solution1 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int len = nums1.length + nums2.length;
