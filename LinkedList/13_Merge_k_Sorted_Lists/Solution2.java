@@ -1,3 +1,4 @@
+// Time Complexity: O(NlogN); Space Complexity: O(N) [N = total number of nodes across all lists]
 /**
  * Definition for singly-linked list.
  * public class ListNode {
