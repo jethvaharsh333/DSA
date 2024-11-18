@@ -1,4 +1,4 @@
-// Time complexity: O(n), Space complexity: O(1)
+// Time complexity: O(n), Space complexity: O(1), OPTIMAL SOLUTION
 /**
  * Definition for singly-linked list.
  * public class ListNode {
