@@ -1,4 +1,4 @@
-// Time Complexity: O(2^n); Space Complexity: O(n)
+// Time Complexity: O(2^n); Space Complexity: O(n); EFFICIENT SOLUTION
 class Solution3 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
