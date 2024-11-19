@@ -1,27 +1,30 @@
-// 2ms, 44.59MB
+// Time Complexity: O(2^n); Space Complexity: O(n)
 class Solution3 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        int n=candidates.length;
-        List<Integer> adding=new ArrayList<>();
-        List<List<Integer>> ans=new ArrayList<>();
-        f(candidates,target,n,0,adding,ans);
-        return ans;
+        List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(candidates);
 
+        genC(candidates, 0, target, new ArrayList<>(), result);
+
+        return result;
     }
-    public static void f(int[] candidates, int target,int n,int idx,List<Integer> adding,List<List<Integer>> ans){
-        if(idx==n){
-            if(target==0){
-                ans.add(new ArrayList<>(adding));
-            }
+
+    private void genC(int[] candidates, int begin, int target, List<Integer> currentlist, List<List<Integer>> result){
+        if(target < 0){
+            return;
+        }
+
+        if(target == 0){
+            result.add(new ArrayList<>(currentlist));
             return;
         }
         
-        if(candidates[idx]<=target){
-            adding.add(candidates[idx]);
-            f(candidates,target-candidates[idx],n,idx,adding,ans);
-            adding.remove(adding.size()-1);
-            
+        for(int i=begin ; i<candidates.length ; i++){
+            currentlist.add(candidates[i]);
+            genC(candidates, i, target-candidates[i], currentlist, result);
+            currentlist.remove(currentlist.size()-1);
         }
-        f(candidates,target,n,idx+1,adding,ans);
+
+        return;
     }
 }
