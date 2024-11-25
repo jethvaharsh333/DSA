@@ -1,4 +1,4 @@
-// Time complexity: O(n); Space complexity: O(h) [h = height of small tree]
+// Time complexity: O(n); Space complexity: O(h) [h = stack size]
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
