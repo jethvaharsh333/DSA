@@ -1,4 +1,4 @@
-// Time complexity: O(n); Space complexity: O(h) [h = height of tree]
+// Time complexity: O(n); Space complexity: O(h) [h = height of tree] [Efficient Solution]
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
