@@ -1,5 +1,5 @@
 // Time complexity:- next():O(h) [h = height of the tree], hasNext():O(1) 
-// Space complexity: O(n)
+// Space complexity: O(h) [h = height of the tree]
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
