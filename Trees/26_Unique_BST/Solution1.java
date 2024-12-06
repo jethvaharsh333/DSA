@@ -7,7 +7,9 @@ class Solution1 {
 
         int sum = 0;
         for(int i=1 ; i<=n ; i++){
-            sum += numTrees(i-1)*numTrees(n-i);
+            int left = i-1;
+            int right = n-i;
+            sum += numTrees(left)*numTrees(right);
         }
 
         return sum;
