@@ -1,4 +1,4 @@
-// Time Complexity: addNum: O(n); findMedian: O(1), Space Complexity: O(n)
+// Time Complexity: addNum: O(logn); findMedian: O(1), Space Complexity: O(n)
 class MedianFinder {
     private final PriorityQueue<Integer> maxHeap;
     private final PriorityQueue<Integer> minHeap;
