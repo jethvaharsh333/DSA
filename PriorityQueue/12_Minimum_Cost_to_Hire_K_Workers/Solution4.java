@@ -1,4 +1,4 @@
-// Time complexity: O(n*(n+klogk)), Space complexity: O(n+k) 
+// Time complexity: O(n(logn+logk)), Space complexity: O(n+k) 
 
 class Solution4 {
     class WorkerRatio{
