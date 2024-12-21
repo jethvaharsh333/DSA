@@ -1,4 +1,4 @@
-// Time complexity: O(v+e), Space complexity: O(e)
+// Time complexity: O(v+e), Space complexity: O(e) [v=number of vertices, e=number of edges]
 
 /*
 // Definition for a Node.
