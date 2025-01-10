@@ -1,4 +1,4 @@
-// Time complexity: O(2^n), Space complexity: O(n)
+// Time complexity: O(2^n), Space complexity: O(n) [TLE]
 
 class Solution1 {
     public int climbStairs(int n) {
