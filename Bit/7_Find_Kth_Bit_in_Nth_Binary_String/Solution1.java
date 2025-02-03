@@ -1,3 +1,5 @@
+// Time Complexity: O(2^n), Space Complexity: O(2^n)
+
 class Solution1 {
     public char findKthBit(int n, int k) {
         StringBuilder s = new StringBuilder("0");
