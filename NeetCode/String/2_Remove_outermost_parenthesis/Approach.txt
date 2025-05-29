@@ -1,2 +1,0 @@
-If We will get '(' then push in stack always however if stack is empty then don't append it.
-If We get ')' then pop from stack if top element of stack is '('. After popping it check for empty stack if true then don't append else append it.
