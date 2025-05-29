@@ -1,0 +1,71 @@
+lc ------------------------------------------------------------------------------------------------
+
+2149. Rearrange Array Elements by Sign [https://leetcode.com/problems/rearrange-array-elements-by-sign/description/]
+
+You are given a 0-indexed integer array nums of even length consisting of an equal number of positive and negative integers.
+You should return the array of nums such that the the array follows the given conditions:
+Every consecutive pair of integers have opposite signs.
+For all integers with the same sign, the order in which they were present in nums is preserved.
+The rearranged array begins with a positive integer.
+Return the modified array after rearranging the elements to satisfy the aforementioned conditions.
+
+Example 1:
+Input: nums = [3,1,-2,-5,2,-4]
+Output: [3,-2,1,-5,2,-4]
+Explanation:
+The positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4].
+The only possible way to rearrange them such that they satisfy all conditions is [3,-2,1,-5,2,-4].
+Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.  
+
+Example 2:
+Input: nums = [-1,1]
+Output: [1,-1]
+Explanation:
+1 is the only positive integer and -1 the only negative integer in nums.
+So nums is rearranged to [1,-1].
+
+cn ------------------------------------------------------------------------------------------------------
+
+Problem statement [https://www.codingninjas.com/studio/problems/alternate-numbers_6783445?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM]
+There is an array ‘A’ of size ‘N’ with an equal number of positive and negative elements.
+Without altering the relative order of positive and negative numbers, you must return an array of alternative positive and negative values.
+Note:Start the array with a positive number. 
+
+For example
+Input:
+A = [1, 2, -4, -5], N = 4
+Output:
+1 -4  2 -5
+Explanation: 
+Positive elements = 1, 2
+Negative elements = -4, -5
+To maintain relative ordering, 1 must occur before 2, and -4 must occur before -5.
+
+Constraints:
+2 <= N <= 10^5 
+-10^9 <= A[i] <= 10^9, A[i] != 0
+N%2==0
+Time Limit: 1 sec
+
+Sample Input 1:
+6 
+1 2 -3 -1 -2 3
+Sample Output 1:
+1 -3 2 -1 3 -2 
+Explanation Of Sample Input 1:
+Testcase 1:
+Input:
+A = [1, 2, -3, -1, -2, 3], N = 6
+Output:
+1 -3 2 -1 3 -2
+Explanation: 
+Positive elements = 1, 2, 3
+Negative elements = -3, -1, -2
+To maintain relative ordering, 1 should come before 2, and 2 must come before 3.
+Also, -3 should come before -1, and -1 must come before -2.
+
+Sample Input 2:
+4
+-2 -3 4 5
+Sample Output 2:
+4 -2 5 -3

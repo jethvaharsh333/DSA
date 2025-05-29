@@ -1,0 +1,11 @@
+1] Brute force
+First we traverse both linked list and store each element in stack.
+Now popping  elements from both stack and if not equal then return last popped element else if equal then continue popping.
+
+2] 
+-First we will get length of both linked list.
+-Now if ll1 > ll2 then forward ll1 pointer
+else forward ll2 pointer
+-At this point both linked list's length will be same and compare ll element
+if false then forward both ll1 and ll2 pointer
+else return ll1 or ll2 pointer

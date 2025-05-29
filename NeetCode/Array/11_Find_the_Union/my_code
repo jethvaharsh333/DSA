@@ -1,0 +1,64 @@
+#include <iostream>
+#include <array>
+#include <vector>
+using namespace std;
+
+int main() {
+    
+    array<int,5> a = {1,2,3,4,6};
+    array<int,4> b = {2,3,5,7};
+    
+    vector<int> arr;
+    int i = 0;
+    int j = 0;
+    int n = a.size();
+    int m = b.size();
+
+    while(i<n && j<m){
+        if(a[i] > b[j]){
+            if (arr.size() == 0 || arr.back() != b[j]){
+                arr.push_back(b[j]);
+            }
+            cout << "first :: " << b[j]  << " :: " << j << endl;
+            j++;
+        }
+        else if(a[i] < b[j]){
+            if (arr.size() == 0 || arr.back() != a[i]){
+                arr.push_back(a[i]);
+            }
+            cout << "second :: " << a[i]  << " :: " << i << endl;
+            i++;
+        }
+        else{
+            if (arr.size() == 0 || arr.back() != a[i]){
+                arr.push_back(a[i]);
+            }
+            cout << "third :: " << a[i]  << " :: " << i << endl;
+            i++;
+            j++;
+        }
+    }
+    
+    while(i < n){
+        if (arr.size() == 0 || arr.back() != a[i]){
+            arr.push_back(a[i]);
+        }
+        cout << "fourth :: " << a[i] << " :: " << i << endl;
+        i++;
+    }
+
+    while(j < m){
+        if (arr.size() == 0 || arr.back() != b[j]){
+            arr.push_back(b[j]);
+        }
+        cout << "fifth :: " << b[j] << " :: " << j << endl;
+        j++;
+    }
+    
+    cout << i << " :: " << j << endl;
+    for(int i=0 ; i<arr.size() ; i++){
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
