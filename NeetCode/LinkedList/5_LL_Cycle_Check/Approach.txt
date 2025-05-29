@@ -1,0 +1,5 @@
+Tortoise and Hare Algorithm
+
+When the tortoise and hare enter the loop, they may be at different positions within the loop due to the difference in their speeds.
+The hare is moving faster, so it will traverse a greater distance in the same amount of time.
+If there is no loop in the linked list, the hare will eventually reach the end, and the algorithm will terminate without a meeting occurring.
