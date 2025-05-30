@@ -8,7 +8,7 @@ https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters
 Time complexity: O(n), Space complexity: O(1)
 * */
 
-public class AA_SS_sizeThree_DistChar {
+public class AAA_SS_sizeThree_DistChar {
     static int[] arr = new int[26];
 
     public static void main(String[] args) {
