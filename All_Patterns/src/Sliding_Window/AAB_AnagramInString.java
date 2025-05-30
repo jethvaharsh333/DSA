@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 /*
-*
+* https://leetcode.com/problems/find-all-anagrams-in-a-string/
+* TC: O(n+m), SC: O(1)
 * */
 
 public class AAB_AnagramInString {
@@ -60,3 +61,21 @@ public class AAB_AnagramInString {
         System.out.print("result: " + result);
     }
 }
+
+/*
+s = "cbaebabacd", p = "abc"
+
+| Step | `left` | `right` | Window | freq (`a`/`b`/`c`) | `remainingChars` | Action                   | `result` |
+| ---- | ------ | ------- | ------ | ------------------ | ---------------- | ------------------------ | -------- |
+| 1    | 0      | 0       | `c`    | a:1 b:1 c:0        | 2                | `c` in p, freq--         | \[]      |
+| 2    | 0      | 1       | `cb`   | a:1 b:0 c:0        | 1                | `b` in p, freq--         | \[]      |
+| 3    | 0      | 2       | `cba`  | a:0 b:0 c:0        | 0                | `a` in p, freq-- → MATCH | \[0]     |
+| 4    | 1      | 3       | `bae`  | a:0 b:0 c:1        | 1                | `e` not in p, `c` freq++ | \[0]     |
+| 5    | 2      | 4       | `aeb`  | a:0 b:0 c:1        | 1                | `b` in p, freq--         | \[0]     |
+| 6    | 3      | 5       | `eba`  | a:0 b:-1 c:1       | 1                | `a` in p, freq--         | \[0]     |
+| 7    | 4      | 6       | `bab`  | a:1 b:-1 c:1       | 1                | `b` in p, freq--         | \[0]     |
+| 8    | 5      | 7       | `aba`  | a:0 b:0 c:1        | 1                | `a` in p, freq--         | \[0]     |
+| 9    | 6      | 8       | `bac`  | a:0 b:0 c:0        | 0                | `c` in p, freq-- → MATCH | \[0, 6]  |
+| 10   | 7      | 9       | `acd`  | a:0 b:1 c:0        | 1                | `d` not in p, `b` freq++ | \[0, 6]  |
+
+*/
