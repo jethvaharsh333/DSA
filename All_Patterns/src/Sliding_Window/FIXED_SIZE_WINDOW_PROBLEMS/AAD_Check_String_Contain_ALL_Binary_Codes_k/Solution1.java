@@ -1,4 +1,4 @@
-package Sliding_Window.AAD_Check_String_Contain_ALL_Binary_Codes_k;
+package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAD_Check_String_Contain_ALL_Binary_Codes_k;
 
 import java.util.Scanner;
 

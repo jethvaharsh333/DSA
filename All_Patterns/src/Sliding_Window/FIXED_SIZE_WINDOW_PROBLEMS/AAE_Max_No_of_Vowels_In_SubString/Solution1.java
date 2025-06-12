@@ -1,4 +1,4 @@
-package Sliding_Window.AAE_Max_No_of_Vowels_In_SubString;
+package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAE_Max_No_of_Vowels_In_SubString;
 
 import java.util.Scanner;
 

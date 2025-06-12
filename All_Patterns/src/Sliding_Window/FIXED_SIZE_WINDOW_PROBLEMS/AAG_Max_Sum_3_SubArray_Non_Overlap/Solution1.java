@@ -1,4 +1,4 @@
-package Sliding_Window.AAG_Max_Sum_3_SubArray_Non_Overlap;
+package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAG_Max_Sum_3_SubArray_Non_Overlap;
 
 import java.util.Arrays;
 

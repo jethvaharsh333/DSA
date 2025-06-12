@@ -1,4 +1,4 @@
-package Sliding_Window.AAF_Max_Avg_SubArray_I;
+package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAF_Max_Avg_SubArray_I;
 
 /*
 * https://leetcode.com/problems/maximum-average-subarray-i/
