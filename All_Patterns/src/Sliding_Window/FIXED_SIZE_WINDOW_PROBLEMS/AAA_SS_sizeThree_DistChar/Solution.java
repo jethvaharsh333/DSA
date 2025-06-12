@@ -1,4 +1,4 @@
-package Sliding_Window;
+package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAA_SS_sizeThree_DistChar;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -8,7 +8,7 @@ https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters
 Time complexity: O(n), Space complexity: O(1)
 * */
 
-public class AAA_SS_sizeThree_DistChar {
+public class Solution {
     static int[] arr = new int[26];
 
     public static void main(String[] args) {

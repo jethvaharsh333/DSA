@@ -1,4 +1,4 @@
-package Sliding_Window;
+package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAB_AnagramInString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.Scanner;
 * TC: O(n+m), SC: O(1)
 * */
 
-public class AAB_AnagramInString {
+public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
