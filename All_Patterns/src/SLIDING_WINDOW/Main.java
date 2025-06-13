@@ -1,6 +1,5 @@
-package Sliding_Window;
+package SLIDING_WINDOW;
 
-import java.util.*;
 public class Main {
     public static int findmaxconssum(int arr[],int n,int k)
     {

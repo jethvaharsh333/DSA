@@ -1,4 +1,4 @@
-package Sliding_Window.DYNAMIC_SIZE_WINDOW_PROBLEMS.AAB_Longest_Repeating_Char_Replace;
+package SLIDING_WINDOW.DYNAMIC_SIZE_WINDOW_PROBLEMS.AAB_Longest_Repeating_Char_Replace;
 
 import java.util.Scanner;
 

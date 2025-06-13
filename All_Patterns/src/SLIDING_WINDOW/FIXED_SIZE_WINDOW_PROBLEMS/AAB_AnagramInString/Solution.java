@@ -1,4 +1,4 @@
-package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAB_AnagramInString;
+package SLIDING_WINDOW.FIXED_SIZE_WINDOW_PROBLEMS.AAB_AnagramInString;
 
 import java.util.ArrayList;
 import java.util.List;

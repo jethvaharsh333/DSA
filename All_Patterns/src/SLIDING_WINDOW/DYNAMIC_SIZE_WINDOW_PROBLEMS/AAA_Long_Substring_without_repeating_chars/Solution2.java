@@ -1,4 +1,4 @@
-package Sliding_Window.DYNAMIC_SIZE_WINDOW_PROBLEMS.AAA_Long_Substring_without_repeating_chars;
+package SLIDING_WINDOW.DYNAMIC_SIZE_WINDOW_PROBLEMS.AAA_Long_Substring_without_repeating_chars;
 
 import java.util.Scanner;
 

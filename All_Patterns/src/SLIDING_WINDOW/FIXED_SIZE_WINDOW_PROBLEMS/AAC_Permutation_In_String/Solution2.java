@@ -1,4 +1,4 @@
-package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAC_Permutation_In_String;
+package SLIDING_WINDOW.FIXED_SIZE_WINDOW_PROBLEMS.AAC_Permutation_In_String;
 
 import java.util.Scanner;
 

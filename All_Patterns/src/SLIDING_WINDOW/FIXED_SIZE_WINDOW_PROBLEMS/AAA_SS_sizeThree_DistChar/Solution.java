@@ -1,4 +1,4 @@
-package Sliding_Window.FIXED_SIZE_WINDOW_PROBLEMS.AAA_SS_sizeThree_DistChar;
+package SLIDING_WINDOW.FIXED_SIZE_WINDOW_PROBLEMS.AAA_SS_sizeThree_DistChar;
 
 import java.util.Arrays;
 import java.util.Scanner;

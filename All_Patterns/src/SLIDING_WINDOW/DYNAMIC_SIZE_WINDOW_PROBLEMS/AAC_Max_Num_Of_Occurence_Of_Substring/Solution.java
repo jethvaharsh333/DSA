@@ -1,4 +1,4 @@
-package Sliding_Window.DYNAMIC_SIZE_WINDOW_PROBLEMS.AAC_Max_Num_Of_Occurence_Of_Substring;
+package SLIDING_WINDOW.DYNAMIC_SIZE_WINDOW_PROBLEMS.AAC_Max_Num_Of_Occurence_Of_Substring;
 
 import java.util.HashMap;
 import java.util.HashSet;
