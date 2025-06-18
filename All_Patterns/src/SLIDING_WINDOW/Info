@@ -1,1 +1,5 @@
 Sliding window
+
+1]  "THINKING REVERSE" for eg. in question: "Minimum Operations to Reduce X to Zero" we have to find smallest subarray from
+    edges to make x=0. here we we can do is make total of array and subtract it from x. Now it is standard sliding window
+    for max length subarray having cost=total-x.

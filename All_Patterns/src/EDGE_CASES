@@ -1,0 +1,97 @@
+Edge cases refer to unusual, extreme, or boundary conditions of input that test whether your code handles all scenarios correctly.
+
+Edge cases are inputs that are:
+    ✅ Smallest or largest possible sizes (e.g., empty array, array with 1 element, max input size)
+    ✅ Unusual values (e.g., negative numbers, zero, duplicates, max/min integers)
+    ✅ Duplicates, sorted, reverse-sorted, or all same values
+    ✅ Special constraints (e.g., K > array size, K = 0)
+    ✅ Expected corner behavior (e.g., when a loop just starts or ends, off-by-one errors)
+
+1] Input Size and Presence:
+    Edge Case              | Description
+    ---------------------- | ----------------------------
+    Empty Input            | `[]`, `""`, `null`
+    Single Element         | Just one item
+    Two Elements           | Minimal comparison/test case
+    Max Size Input         | e.g., 10⁵ or 10⁶ items
+    Zero-Length Parameters | Like `k = 0`
+
+2] Input Value Variety:
+    Edge Case           | Description
+    ------------------- | ----------------------------------------
+    All Elements Same   | `[2, 2, 2]`
+    All Unique Elements | `[1, 2, 3, 4]`
+    All Duplicates      | `[5, 5, 5]`
+    All Zeros           | `[0, 0, 0]`
+    All Negatives       | `[-1, -2, -3]`
+    Mix of Pos/Neg/Zero | `[0, -1, 2]`
+    Boundary Values     | `Integer.MAX_VALUE`, `Integer.MIN_VALUE`
+    Only One Non-Zero   | `[0, 0, 99]`
+
+3] Ordering & Patterns:
+    Edge Case              | Description
+    ---------------------- | -----------------
+    Already Sorted         | `[1, 2, 3, 4]`
+    Reverse Sorted         | `[4, 3, 2, 1]`
+    Alternating Pattern    | `[1, 2, 1, 2]`
+    Sorted with Duplicates | `[1, 2, 2, 3]`
+    Repeating Pattern      | `[1, 2, 1, 2, 1]`
+
+4] Index & Boundary Sensitivity:
+    Edge Case               | Description
+    ----------------------- | --------------------------
+    Element at Start/End    | `target` at first or last
+    Off-by-One              | e.g., `i <= n` vs `i < n`
+    K = 0 or K = N          | Extreme range values
+    K > Array Size          | Oversized window/selection
+    Requires Full Traversal | Answer only at end
+    Answer is First Element | Early return condition
+
+5] Result Validity and Failure:
+    Edge Case                | Description
+    ------------------------ | ---------------------------------
+    Valid but Unusual Answer | Already satisfies goal
+    No Valid Answer          | Should return `-1`, `false`, etc.
+    Overflow/Underflow       | e.g., `sum > 2³¹`
+    Division by Zero Risk    | e.g., `arr[i] / 0`
+
+6] Data Type Specific:
+    Strings
+        Empty string: ""
+        Case sensitivity: "A" vs "a"
+        Spaces/symbols: "a b!"
+        Palindrome vs non-palindrome
+
+    Trees
+        Empty tree
+        Skewed left/right
+        Balanced vs unbalanced
+        Single node
+        Duplicate values
+
+    Graphs
+        Disconnected graph
+        Self-loop
+        Cycle
+        Single-node
+        Directed vs undirected mismatches
+
+    Heaps/Queues/Stacks
+        Empty pop/peek
+        Same priority
+        Overflow under fixed capacity
+
+    DP/Memoization
+        Base case = 0 or 1
+        Table = 0 length
+        High recursion depth
+
+** Memorize:-
+    Category      | Mnemonic Tip
+    ----------------- | ---------------------------------------------------------------------
+    Input Size        | “E-S-T-M”       → Empty, Single, Two, Max
+    Input Values      | “S-U-Z-N-M-B”   → Same, Unique, Zeros, Negatives, Mixed, Boundaries
+    Order & Pattern   | “S-R-A-RP”      → Sorted, Reverse, Alternating, Repeating Pattern
+    Index Sensitivity | “S-E-K-F”       → Start, End, K-edge, Full Scan
+    Result Validity   | “V-N-O”         → Valid, No Result, Overflow
+    Type-Specific     | Think: STR-TREE-GRAPH-DP
