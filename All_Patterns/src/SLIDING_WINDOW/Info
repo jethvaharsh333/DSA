@@ -1,5 +1,18 @@
-Sliding window
+Sliding window:
+Question 1] When should I shrink the window?
+Question 2] When is the condition satisfied?
+Question 3] How can I count how many subarrays end here?
 
-1]  "THINKING REVERSE" for eg. in question: "Minimum Operations to Reduce X to Zero" we have to find smallest subarray from
-    edges to make x=0. here we we can do is make total of array and subtract it from x. Now it is standard sliding window
-    for max length subarray having cost=total-x.
+** Mapping the Math Into the Window
+In medium to hard a principle may be used. like e.g. "Count pairs using freq * (freq - 1) / 2"
+In optimized approaches, you need to realize:
+    * Each time you add nums[right] into the window, how many new pairs are formed?
+    * Each time you remove nums[left], how many pairs are destroyed?
+
+Question like "What happens to the number of pairs if I extend the window by 1 element?"
+
+=> DYNAMIC SIZE WINDOW:
+
+AAG] "THINKING REVERSE" for eg. in question: "Minimum Operations to Reduce X to Zero" we have to find smallest subarray
+    from edges to make x=0. here we we can do is make total of array and subtract it from x. Now it is standard sliding
+    window for max length subarray having cost=total-x.
