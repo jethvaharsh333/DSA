@@ -1,5 +1,5 @@
 Sliding window:
-Question 1] When should I shrink the window?
+Question 1] Be deliberate: “When does my window break?”
 Question 2] When is the condition satisfied?
 Question 3] How can I count how many subarrays end here?
 
@@ -10,9 +10,43 @@ In optimized approaches, you need to realize:
     * Each time you remove nums[left], how many pairs are destroyed?
 
 Question like "What happens to the number of pairs if I extend the window by 1 element?"
+Fix violations immediately during iteration
 
 => DYNAMIC SIZE WINDOW:
 
 AAG] "THINKING REVERSE" for eg. in question: "Minimum Operations to Reduce X to Zero" we have to find smallest subarray
     from edges to make x=0. here we we can do is make total of array and subtract it from x. Now it is standard sliding
     window for max length subarray having cost=total-x.
+
+AAI]
+    ❌ What went wrong:
+        Treated it like a subarray sum problem.
+        Applied shrinking when not needed.
+
+    ✅ Conclusions:
+        *** Shrinking isn't always necessary — some sliding window problems can be solved with static boundary markers (lastValid, lastInvalid).
+        Track what matters — when a problem talks about max, don’t accidentally track sum.
+        Reverse thinking helps — Instead of generating all valid subarrays, think: “How many invalids to subtract from total?”
+        Subarray counting often maps to index math — Use logic like lastValid - lastBreak to count valid endpoints.
+
+AAJ]
+    ❌ What went wrong:
+        ** Used a Set (type presence) instead of a Map (type frequency) as you don't analyze all the test cases.
+        Didn't maintain the window properly after 3rd type was added.
+
+    ✅ Conclusions:
+        When you're limiting by number of distinct elements, always track their frequency.
+        Removing one index isn't always enough — you must remove a type only after all its occurrences are gone.
+        Use while (map.size() > 2), not just if, to keep the window valid during shrinking.
+        Every time you expand right, you must be ready to shrink left to revalidate.
+
+AAK]
+    ❌ What went wrong:
+        Used a tempK to track flips but didn’t immediately correct invalid window.
+        Forgot to enforce the "at most k 0s" invariant during expansion.
+
+    ✅ Conclusions:
+        ** Sliding window = expand right, shrink left to maintain a strict condition and you didn't maintain proper window.
+        The window should never stay invalid — once broken, it must be immediately fixed.
+        Track the condition being violated, not just what you're allowed to do.
+        Never think “check after”; always think “maintain during”.
