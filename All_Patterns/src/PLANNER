@@ -1,0 +1,71 @@
+ - Each day 3 question [e.g. 1 easy , 1 medium, 1 hard]
+ - Total 3 hrs.
+
+ -----------------------------------------------------------------------------------------------------------------------
+
+1] ARRAYS
+    - 2 pointers
+    - Sliding Window
+    - Binary Search
+    - Matrix
+    - Sorting
+    - Prefix & Suffix
+    - String Manipulation + String Matching Algos
+
+2] Linear Lists
+    - Stack
+    - Queue
+    - Linked list
+
+ 3] TREE + HEAP [Recursion+Backtracking, Binary Tree, BST, Priority Queue]
+
+ 4] GRAPH + TRIE
+
+ 5] GREEDY + DP
+
+ 6] REVISION + Bit Manipulation + CONTEST [8 p.m.]
+
+ 7] CONTEST [8 a.m.] + ADVANCE ALGOS + Test 2 randomly failed questions
+    - Fenwick tree
+    - Segment tree
+    - Sparse tree
+
+ => Remaining
+    - Game theory                   [Level 1, Level 2, Level 3]
+    - Geometry and Combinatorics    [Line, Rectangle, Circle, Combinatorics]
+    - Hashing
+
+------------------------------------------------------------------------------------------------------------------------
+
+1]  Easy [15 Min Total]
+
+    Time         | Task
+    ------------ | --------------------------------------------------------------------
+    0–3 min      | Read prompt, identify key pattern (e.g. “Oh this is sliding window”)
+    4–6 min      | Think of test cases: empty input, 1-element, max values
+    7–15 min     | Code and test. If stuck → print trace or dry-run small case.
+
+    => If not solved in 15 minutes → Mark “Pattern unclear,” see solution
+
+
+2]  Medium [30 Min Total]
+
+    Time          | Task
+    ------------- | ------------------------------------------------------------------
+    0–5 min       | Carefully read prompt, constraints, sketch 2–3 examples
+    6–10 min      | Identify DS/Technique: e.g. Two Pointers? Sliding window with map?
+    11–25 min     | Code main idea. Add debug prints for edge test case logic
+    26–30 min     | Test all edge cases. If still not working, STOP. See solution.
+
+    => If not solved in 30 → Read solution, spend 10 more min understanding
+
+3] Hard [60 Min Total]
+
+    Time          | Task
+    ------------- | ------------------------------------------------------------------------------
+    0–10 min      | Analyze deeply: dry-run 2 examples, draw small grid/tree if needed
+    11–15 min     | Think constraints. Can brute force work? Optimize later?
+    16–45 min     | Try approach (DFS? DP? Graph model?). If fails, debug prints or simplify logic
+    46–60 min     | If totally stuck → switch to solution and read slowly to reconstruct
+
+    => If not solved in 60 → See solution + note where you went wrong (pattern, test case, complexity)

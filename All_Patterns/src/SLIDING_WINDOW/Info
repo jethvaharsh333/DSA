@@ -50,3 +50,7 @@ AAK]
         The window should never stay invalid — once broken, it must be immediately fixed.
         Track the condition being violated, not just what you're allowed to do.
         Never think “check after”; always think “maintain during”.
+
+        
+
+https://manralai.medium.com/only-15-patterns-to-master-any-coding-interview-570a3afc9042
