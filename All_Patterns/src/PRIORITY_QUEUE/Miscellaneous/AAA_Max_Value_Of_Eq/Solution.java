@@ -1,4 +1,4 @@
-package Priority_Queue.Miscellaneous.AAA_Max_Value_Of_Eq;
+package PRIORITY_QUEUE.Miscellaneous.AAA_Max_Value_Of_Eq;
 
 import java.util.PriorityQueue;
 import java.util.Scanner;
