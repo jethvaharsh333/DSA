@@ -1,15 +1,15 @@
-package DP.Knapsack.AAC_Target_Sum;
+package RECURSION_AND_BACKTRACKING.COMBINATION.AAA_Target_Sum;
 
 import java.util.*;
 
 /**
  * Question link:
- * Date: 05-07-2025
+ * Date: 17-07-2025
  * Time complexity:
  * Space complexity:
  */
 
-class Solution2 {
+public class Solution2 {
     public int findTargetSumWays(int[] nums, int target) {
         int len = nums.length;
 
@@ -38,18 +38,11 @@ class Solution2 {
 
 /*
 
-** We create a 2D DP array because our recursive function has two changing parameters: idx (current index in the array) and sum (current accumulated sum).
-However, since sum can become negative due to subtracting values (sum - nums[idx]), we can't directly use sum as an index in the DP array.
-To handle this, we compute the total sum of the array (totalSum) and use it as an offset. This allows us to shift the sum range from [-totalSum, totalSum] to [0, 2 * totalSum].
-Therefore, the final DP table size becomes dp[n][2 * totalSum + 1] where n = nums.length, and every state is stored as dp[idx][sum + offset].
-This prevents negative indexing and ensures memoization is valid for all possible values of sum.
-
 Mistake                                          | Fix
 ------------------------------------------------ | ---------------------------------------------
 You assumed `sum` will always be non-negative    | But `sum` can go negative, so use offset
 You used `int[][] dp = new int[len+1][target+1]` | But `target+1` is not the full range of `sum`
 You did not account for the full range of sum    | You need range `-totalSum` to `+totalSum`
-dp[idx][sum]                                     | dp[idx][sum+offset]
 
                 idx=0 sum=0
               /             \
