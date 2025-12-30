@@ -1,0 +1,8 @@
+We are given an Array of Numbers. We have to find and print any Number with Maximum Frequency and Minimum Frequency.
+
+IN:
+Arr = [3, 2, 3, 2, 4, 3]
+
+OUT:
+Maximum Frequency:- Element is 3, Frequency is 3
+Minimum Frequency:- Element is 4, Frequency is 1

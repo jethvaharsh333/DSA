@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/01_Kth_Largest_Ele_in_Stream" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Last_Stone_Weight" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/03_K_Closest_Points_to_Origin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/04_Kth_Largest_Element_in_Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/05_Task_Scheduler" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/06_Find_Median_from_Data_Stream" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/07_Design_Twitter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/08_Top_K_Frequent_Elements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/09_Ugly_Number_II" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10_Kth_Small_Element_in_Sort_Matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11_Reorganize_String" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_Minimum_Cost_to_Hire_K_Workers" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

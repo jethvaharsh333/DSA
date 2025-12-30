@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/10_Binary_Tree_Level_Order_Traversal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11_Lowest_Common_Ancestor_of_BST" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_BT_Right_Side_View" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/13_Count_Good_Nodes_in_BT" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/14_Kth_Smallest_Ele_in_BST" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/15_Validate_BST" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/16_Symmetric_Tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/17_Construct_BT_from_Preorder&amp;Inorder_Trav" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18_BT_Max_Path_Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/19_Path_Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1_PreOrder_Traversal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/20_Sum_of_Left_Leaves" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/21_Serialize_&amp;_Deserialize_BT" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/22_Maximum_Width_of_BT" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/23_Minimum_Absolute_Diff_in_BST" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/24_Flatten_BT_to_LL" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/25_BT_Zigzag_Level_Ord_Trav" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/26_Unique_BST" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/27_BST_Iterator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/28_Recover_BST" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/29_Path_Sum_III" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2_InOrder_Traversal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/30_Binary_Tree_Cameras" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/31_Populate_Nxt_Right_Ptr_in_Each_Node" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/32_Sum_of_Distances_in_Tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/33_Redundant_Connection" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/34_Vertical_Order_Trav_of_BT" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/35_Merge_Two_Binary_Trees" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3_PostOrder_Traversal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4_Same_Tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_Maximum_Depth_of_Binary_Tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6_Invert_Binary_Tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7_Diameter_of_Binary_Tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Balanced_Binary_Tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/9_Subtree_of_Another_Tree" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

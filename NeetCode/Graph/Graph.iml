@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/01_BFS_Traversal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_DFS_Traversal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/03_Number_of_Islands" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/04_Max_Area_of_Island" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/05_Clone_Graph" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/06_Rotting_Oranges" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/07_Pacific_Atlantic_WaterFlow" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/08_Course_Schedule" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/09_Surrounded_Regions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10_Course_Schedule_II" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11_Word_Ladder" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_Redundant_Connection" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/13_Reconstruct_Itinerary" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/14_Network_Delay_Time" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/15_01_Matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/16_Number_of_Enclaves" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/17_Find_Eventual_Safe_States" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18_Shortest_Path-Visiting_All_Nodes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/19_Is_Graph_Bipartite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/21_Min_Number_Day_to_Disconnect_Island" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/22_Shortest_Path_in_Binary_Matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/23_Accounts_Merge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/24_Critical_Connection_in_Network" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/25_Find_City_At_Threshold" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

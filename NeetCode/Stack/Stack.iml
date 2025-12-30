@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/10_Implement_Queue_using_Stacks" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11_Backspace_String_Compare" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_Implement_Stack_using_Queues" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/13_Online_Stock_Span" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/14_Flatten_Nested_List_Iterator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1_Implement_stack_using_array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2_Valid_Parenthesis" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3_Min_Stack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4_Next_Greater_Element_1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_Price_With_Discount" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6_Largest_Rect_In_Histo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7_Car_Fleet" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Daily_Temperatures" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/9_Eval_Rev_Polish_Notn" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

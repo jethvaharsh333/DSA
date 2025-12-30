@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/10_Palindrome_Partitioning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11_N_Queens" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_Word_Search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1_Fibonacci_number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2_Reverse_String" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3_Permutations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4_Permutation_Sequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_Combination_Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6_Combination_Sum_2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7_Subsets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Subsets_II" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/9_Letter_Combinatn_of_Phone_No" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

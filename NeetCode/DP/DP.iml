@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/10_Longest_Palindromic_Subsequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11_Shortest_Common_Supersequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_Longest_Increasing_Subsequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/13_Max_Len_of_Pair_Chain" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/14_Unique_Paths" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/15_Unique_Path_II" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1_Maximal_Rec" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2_Climbing_Stairs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3_Counting_Bits" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4_Min_Cost_Climbing_Stairs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_House_Robber" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6_House_Robber_II" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7_Coin_Change" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Coin_Change_II" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/9_Longest_Common_Subsequence" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
