@@ -1,0 +1,1 @@
+Count all i,j pairs where i<j and abs(b[i]-b[j]) = k [k>=0]

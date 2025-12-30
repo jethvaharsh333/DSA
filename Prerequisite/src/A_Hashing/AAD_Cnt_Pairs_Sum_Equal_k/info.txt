@@ -1,0 +1,45 @@
+Count all the (i,j) Pairs such that b[i] + b[j] == k (count of such pairs.) [i<j]
+
+Test Case 1:
+Input:
+5
+1 2 3 4 5
+6
+Output: 2
+Pairs: (1,5), (2,4)
+
+Test Case 2:
+Input:
+4
+1 1 1 1
+2
+Output: 6
+
+Test Case 3:
+Input:
+5
+0 0 0 0 0
+0
+Output: 10
+
+Test Case 4:
+Input:
+6
+-1 2 3 -2 4 1
+2
+Output: 3
+Pairs: (-1,3), (-2,4)
+
+Test Case 5:
+Input:
+3
+10 20 30
+100
+Output: 0
+
+Test Case 6:
+Input:
+1
+5
+5
+Output: 0
