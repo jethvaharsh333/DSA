@@ -16,7 +16,7 @@ public class JB {
         int k = sc.nextInt();
 
         // LOGIC
-        Map<Integer, Integer> map = new HashMap<>(); // sum -> freq
+        Map<Integer, Integer> map = new HashMap<>(); // prefixSum -> freq
         map.put(0, 1);
 
         int sum=0, count=0;
