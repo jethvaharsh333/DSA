@@ -1,0 +1,1 @@
+ Find Sum of Range  [l……….r] where(l<=r) for each query using Prefix sum.
