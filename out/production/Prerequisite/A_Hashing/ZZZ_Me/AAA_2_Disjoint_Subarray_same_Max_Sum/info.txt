@@ -1,0 +1,2 @@
+First find the maximum subarray sum (Kadane’s result).
+Then find two non-overlapping subarrays, each having that same maximum sum.

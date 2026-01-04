@@ -1,0 +1,2 @@
+Given an array, find two disjoint (non-overlapping) subarrays such that the sum of both subarrays is maximum.
+(Both the subarrays are allowed to be 0)
