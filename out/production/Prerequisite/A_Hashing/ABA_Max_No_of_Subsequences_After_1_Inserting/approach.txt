@@ -1,0 +1,88 @@
+Given a string -> how many occurrences of “L” are there in the string
+
+-> How many subsequences in the string are of the from “LC”
+-> LCLLC
+-> O/P :- “4”;
+
+at each index “i” try to calculate how many “LC” sequences are strictly ending at index “i”
+"LC” -> If you want this subsequence to end at index “i” -> s[i]==’C’
+
+we will just count for each index “i” how many “LC” are ending at that index “i”
+
+if (s[i]==’C’){
+   lc[i] = l[i-1] ->(count of ‘L’ from 0 to i-1)
+}
+
+----- PSEUDO-CODE -----
+-> l = 0
+-> lc = 0
+-> n
+-> string s;
+fo(i,0,n-1){
+    if(s[i]=='L'){
+        l++;
+    }
+    if(s[i]=='C'){
+        lc = lc + l; l->[count of L from 0 to i-1]
+    }
+
+}
+print(lc)
+
+========================================================================================================================
+
+How to count the number of “LCT” sequences in the string
+
+-> for each index i -> count how many LCT end at this index
+if(s[i]==’T’){
+  → LCT = LCT + LC(count of “LC” sequences from 0 to i-1)
+}
+
+----- PSEUDO-CODE -----
+-> l = 0
+-> lc = 0
+-> n
+-> string s;
+fo(i,0,n-1){
+    if(s[i]=='L'){
+        l++;
+    }
+    if(s[i]=='C'){
+        lc = lc + l; l->[count of L from 0 to i-1]
+    }
+    if(s[i]=='T'){
+        lct = lct + lc
+    }
+
+}
+print(lct)
+
+========================================================================================================================
+
+Real version :-> Same as before :- count how many LCT subsequences are in the string
+-> once done
+-> you are now allowed to insert any 1 char at any place in the string
+-> do it in such a way so that final count of LCT maximizes;
+
+-> we count old_answer = count of “LCT” subsequences in the string
+
+->1st observation :- the only characters which you try to insert should be “L” or “C” or “T”
+
+-> Case :-1 :-> Try to insert “L” -> where to insert “L”
+-> If you insert “L” in middle of (0….i) and (i+1….n-1)
+=> new_answer = old_answer + count of “CT” in the suffix[i+1….n-1]
+=> maximizing :-> “L” should always be put at the start
+-> answer1 = old_answer + count of “CT” in the string[0……n-1]
+
+-> Case :-3 :-> Try to insert “T” -> where to insert “T” -> put in the end -> same analysis as before;
+-> answer3 = old_answer + count of “LC” in the string[0……n-1]
+
+-> Case :-2 :-> Insert C ->try all positions for “C”
+-> If we try to insert “C” in middle of [0….i-1] and [i….n-1]
+-> new_answer = old_answer + count of L from [0….i-1]*count  of T from [i….n-1]
+
+-> do this for each index “i” -> and take max of all of them -> answer2; and compare them with
+-> max(answer1,answer2,answer3);
+
+TC :- O(N);
+Takes O(N) size space;

@@ -1,0 +1,81 @@
+Code Question 1 - Security Risk Level
+
+Amazon is launching a revolutionary security feature that incorporates an advanced antivirus program,
+adept at identifying and halting potential threats.
+
+This framework manages n active programs, each with a unique Program Identifier (PID).
+The antivirus program evaluates the overall security risk of the system using a specialized algorithm.
+
+Problem Description:
+    The algorithm works as follows:
+    - It analyzes all contiguous subarrays of the array pid.
+    - For each subarray:
+      - Compute the sum of the PIDs.
+      - Compute the remainder when this sum is divided by a constant k.
+    - If the remainder equals the number of elements in that subarray, the subarray is considered malicious.
+    - The overall security risk is defined as the total number of malicious subarrays.
+
+Given:
+    - An array pid of size n, representing the PIDs of the programs running on the computer.
+    - An integer k with which the remainder is checked.
+
+Notes
+    - Remainder is defined as the remaining part after performing division.
+        Example: the remainder of 13 divided by 5 is 3.
+    - A subarray is a contiguous portion of an array.
+        For example, in the array [5, 7, 9, 11], possible subarrays include [5,7], [7,9,11], [11], etc.
+
+A subarray maintains the original order of elements and consists of consecutive elements.
+
+Example
+    n = 4
+    pid = [1, 3, 2, 4]
+    k = 4
+Explanation
+    There are 2 malicious contiguous subarrays:
+    1. Subarray [0, 0] → [1]
+       - Sum = 1
+       - 1 % 4 = 1
+       - Length = 1
+       - ✅ Malicious (1 = 1)
+    2. Subarray [2, 3] → [2, 4]
+       - Sum = 6
+       - 6 % 4 = 2
+       - Length = 2
+       - ✅ Malicious (2 = 2)
+
+    Non-malicious example:
+    - Subarray `[3, 2]`
+      - Sum = 5
+      - 5 % 4 = 1
+      - Length = 2
+      - ❌ Not malicious (1 != 2)
+
+    Output
+    2
+
+Function Description:
+    Complete the function findSecurityLevel in the editor below.
+
+    - Function Parameters:
+        int pid[n]: an array of integers denoting the PIDs of the programs
+        int k: an integer with which the remainder is checked
+
+    - Returns
+        long: an integer denoting the overall security risk of the system
+
+Constraints
+    1 ≤ n ≤ 2 × 10^5
+    1 ≤ pid[i] ≤ 10^9
+    1 ≤ k ≤ 10^9
+
+Sample Input for Custom Testing
+STDIN          FUNCTION
+-----          --------
+5              pid[] size n = 5
+1              pid = [1, 4, 2, 3, 5]
+4
+2
+3
+5
+100            k = 100
