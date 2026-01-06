@@ -1,0 +1,135 @@
+[5,9,3,3,3,9,-5]
+   i       j
+
+Observation:
+    arr[i] = arr[j] (duplicate)
+
+sum from i->j: prefixSum[j] - prefixSum[i-1] = sum
+
+// INIT
+prefixSum[]
+count
+
+for each j:
+    -> check map if map.get(currentElement)
+        -> (means this element already occurred)
+        -> sum = prefixSum[j] - prefixSum[i-1]
+        -> sum == currentElement
+            -> count++
+        -> map.put(currentElement, j)
+
+------------------------------------------------------------------------------------------------------------------------
+
+Find the subarray sum of currentElement + currentElement (i.e. currentElement*2) because
+arr[j] = currentElement         } ✔️
+SubarrayBtwI&J = currentElement } ✔️
+arr[i] = currentElement
+
+(We have map as prefixSum -> index)
+And if we find out that then we know map.get(currentElement*2) gives `i+1`
+And check is arr[i] == arr[j]?
+
+------------------------------------------------------------------------------------------------------------------------
+
+CORRECT APPROACH :::::::::::::::::::::::::::::
+
+INTUITION
+---------
+A stable subarray exists when the left boundary value and its prefix sum
+perfectly balance the prefix just before the right boundary.
+Hashing lets us detect this balance instantly.
+
+
+1) Convert condition using prefix sums
+--------------------------------------
+Stable subarray [l..r] must satisfy:
+capacity[l] = capacity[r] = sum(l+1 .. r-1)
+
+Using prefix sums:
+sum(l+1 .. r-1) = prefix[l+1..r-1] = prefix[r-1] - prefix[l]
+
+So:
+prefix[l] + capacity[l] = prefix[r-1]
+
+WHY:
+Direct subarray summation is O(n^2). Prefix sums allow algebraic checking.
+
+
+2) Rewrite equation from right boundary r
+-----------------------------------------
+Let:
+prefix = sum(0 .. r)
+
+Then:
+prefix[r-1] = prefix - capacity[r]
+
+Substitute:
+prefix[l] + capacity[l] = prefix - capacity[r]
+
+Rearrange:
+prefix[l] = prefix - 2 * capacity[r]
+
+WHY:
+This allows one-pass left-to-right traversal while treating r as current index.
+
+
+3) Hash the left-boundary state
+-------------------------------
+A valid left index l must satisfy BOTH:
+- capacity[l] == capacity[r]
+- prefix[l] == prefix - 2 * capacity[r]
+
+So store:
+(prefixSum_at_l , capacity[l])
+
+Implemented as a composite key:
+"prefixSum,capacityValue"
+
+WHY:
+Hashing both values together avoids false matches and ensures O(1) lookup.
+
+
+4) Count valid subarrays
+-----------------------
+For each element curr:
+- Update prefix
+- Compute sumDesired = prefix - 2 * curr
+- Look for key (sumDesired , curr) in hashmap
+- Add its frequency to answer
+- Insert current state (prefix , curr) into hashmap
+
+WHY:
+Each match directly corresponds to a stable subarray ending at r.
+
+
+5) Fix zero edge case
+---------------------
+When curr == 0:
+Length-2 subarrays [0,0] get counted accidentally.
+
+Fix:
+Subtract count of adjacent (0,0) pairs.
+
+WHY:
+Problem requires subarray length >= 3.
+
+
+CROSS EXAMPLE (Why hashing is needed)
+------------------------------------
+Input:
+[3,3,3]
+
+Valid:
+[3,3,3]
+
+Without prefix+value hashing:
+[3,3] (length 2) gets falsely counted.
+
+Hashing + zero-fix prevents this.
+
+
+COMPLEXITY
+----------
+Time:  O(n)
+Space: O(n)
+
