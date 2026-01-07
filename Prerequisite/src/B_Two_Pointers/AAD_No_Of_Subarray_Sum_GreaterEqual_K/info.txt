@@ -1,0 +1,25 @@
+Practice Question 1 :- Find count of subarrays whose sum>=k
+
+-----------------------------------------------------------------------------
+Way 1 :- Total number of subarrays {n*(n+1)/2} - (count of subarrays whose sum<k)
+
+countSubarraysSumAtMost(X):
+    i = 0
+    sum = 0
+    count = 0
+
+    for j = 0..n-1:
+        sum += nums[j]
+        while sum > X:
+            sum -= nums[i]
+            i++
+
+        count += (j - i + 1)
+
+    return count
+
+
+
+
+
+Way 2 :- https://ideone.com/1EafpT

@@ -1,0 +1,6 @@
+Given an array of all integers>=0 -> find the largest subarray whose sum is <= k
+
+-> Brute Force :- Check all the subarrays if sum of a subarray<=k
+-> note down its length.
+Maximum of all of them is the answer
+https://www.jdoodle.com/ia/1yyC

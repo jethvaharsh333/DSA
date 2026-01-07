@@ -1,0 +1,29 @@
+[..., e, b, d, ....]
+      i     j
+
+here min = b, max = e => max-min = 4 = diff
+
+---- CASE 1: Adding smaller element to our subarray
+[..., e, b, d, a  ....]
+      i     j  j+1
+
+Now min = a, max = d => max-min = 5 = diff
+
+---- CASE 2: Adding greater element to our subarray
+[..., e, b, d, f  ....]
+      i     j  j+1
+
+Now min = b, max = f => max-min = 5 = diff
+
+---- CASE 3: Adding between element to our subarray
+[..., e, b, d, c  ....]
+      i     j  j+1
+
+Now min = b, max = e => max-min = 4 = diff
+
+******** OBSERVATION
+No matter what elements you add the difference will be increasing or equal only. And not lower.
+
+******** NOTES
+Hence j++ => increase / equal
+And i++ => decrease / equal

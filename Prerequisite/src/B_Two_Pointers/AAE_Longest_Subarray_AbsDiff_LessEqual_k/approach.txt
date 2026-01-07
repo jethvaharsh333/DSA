@@ -1,0 +1,8 @@
+Window's min and max is the game.
+
+Use a sliding window and keep track of the window’s minimum and
+maximum in O(1) using two monotonic deques; shrink the window whenever max − min > limit
+
+Sliding window + two deques → max–min always known
+
+Window valid ⇔ maxDeque − minDeque ≤ limit

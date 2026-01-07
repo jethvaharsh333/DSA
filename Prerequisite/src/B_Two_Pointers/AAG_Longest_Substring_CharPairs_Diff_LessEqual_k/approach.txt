@@ -1,0 +1,11 @@
+-> A substring is only valid if max char [i……i] and min char [i…..j]
+-> max - min <=k
+
+-> Find the largest substring such that max char - min  char <= k -> follows monotonous nature.
+
+-> Exactly same as find the largest subarray whose sum <= k
+
+-> if max - min <=k -> j++
+-> max - min > k -> i++
+
+*** DEQUE SOLUTION IS THE MOST OPTIMAL HERE.

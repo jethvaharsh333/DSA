@@ -1,0 +1,4 @@
+Google Interview
+Find the largest valid substring
+- Valid string is a string where any pair of characters have diff<=k
+
