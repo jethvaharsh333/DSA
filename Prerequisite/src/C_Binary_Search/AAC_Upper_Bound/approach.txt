@@ -1,0 +1,6 @@
+target = 550
+
+------ 500 ------ 600 ---------
+      (<=550)    (>550) <- Upper Bound
+
+Means when we are reducing `high` we have to check `high-1` element if <= target, it's our answer.

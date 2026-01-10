@@ -1,0 +1,12 @@
+Understanding :-> P1 and P2 are two players; in each player’s turn they will select the first element of the current array -> remove that element from the array -> add it to their sum;
+-> If the latest removed element is even then we need to reverse the remaining before next player plays the game on array
+
+-> Find score(P1) - score(P2)
+
+-> Brute Force :- O(N*N);
+
+-> Optimization :-> Two Pointer -> https://www.jdoodle.com/ia/1Iwi
+
+TC :- O(N)
+
+-> Takes O(1) size space;

@@ -1,0 +1,2 @@
+Given a sorted array of size “N”;
+find the index of the number in the array which is just greater than x and as close as possible to x.

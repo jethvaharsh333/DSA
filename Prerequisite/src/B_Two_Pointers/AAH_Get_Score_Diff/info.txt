@@ -1,0 +1,68 @@
+Problem Title: Match Outcome Evaluation (getScoreDifference)
+
+Description:
+Given the initial setup of a match between two players, evaluate the match's outcome.
+
+There are two players, and there is a number sequence of size n. Players alternate turns for n rounds. Each round, a player removes the first number from the sequence and adds its value to their score. After that, if the 'removed' number is even, the remaining sequence is reversed.
+
+Determine the difference in scores between the two players after the game.
+
+More precisely, suppose first_score and second_score are the final scores of the first and second player, respectively. The goal is to calculate the value of first_score - second_score.
+
+Example:
+The number of elements is n = 5 and numSeq = [3, 6, 2, 3, 5].
+
+1. 1st round: The first player picks 3, first_score = 3. The remaining sequence: [6, 2, 3, 5].
+2. 2nd round: The second player picks 6, second_score = 6. Since 6 is even, the remaining sequence is reversed: [5, 3, 2].
+3. 3rd round: The first player picks 5, first_score = 3 + 5 = 8. The remaining sequence: [3, 2].
+4. 4th round: Second player picks 3, second_score = 6 + 3 = 9. The remaining sequence: [2].
+5. 5th round (final): First player picks 2, second_score (Note: usually first player adds to first_score, implies error in problem text here, but logic holds) = 8 + 2 = 10. The remaining sequence: [].
+
+The total difference between players' scores is first_score - second_score = 10 - 9 = 1.
+
+Function Description:
+Complete the function getScoreDifference in the editor.
+
+getScoreDifference has the following parameter:
+numSeq: the given array of integers
+
+Returns:
+int: first_score - second_score
+
+Constraints:
+* 1 <= n <= 10^5
+* 1 <= numSeq[i] <= 10^4 for each 0 <= i < n
+
+-------------------------------------------
+
+Sample Case 0:
+Input:
+4
+2 1 4 3
+(numSeq size n = 4, numSeq = [2, 1, 4, 3])
+
+Output:
+2
+
+Explanation:
+The game proceeds as follows:
+* 1st round: First player picks 2, first_score = 2. The remaining sequence is reversed (since 2 is even): [3, 4, 1].
+* 2nd round: Second player picks 3, second_score = 3. The remaining sequence: [4, 1].
+* 3rd round: First player picks 4, first_score = 2 + 4 = 6. The remaining sequence: [1].
+* 4th round (final): Second player picks 1, second_score = 3 + 1 = 4. The remaining sequence: [].
+
+The difference between players' scores is 6 - 4 = 2.
+
+-------------------------------------------
+
+Sample Case 1:
+Input:
+2
+2 2
+(numSeq size n = 2, numSeq = [2, 2])
+
+Output:
+0
+
+Explanation:
+Both the players pick identical elements.

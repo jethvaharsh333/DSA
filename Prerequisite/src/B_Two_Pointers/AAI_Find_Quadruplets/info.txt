@@ -1,0 +1,2 @@
+Problem :-> Given a sorted array of size N;
+find the number of quadruplets (i,j,k,l) such that -> a[i] + a[j] > k1 && a[k] + a[l] > k2
