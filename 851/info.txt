@@ -1,0 +1,29 @@
+PS - 111
+
+BS - 49
+
+TP - 34
+
+TP & SW - 14
+
+IMPL & OBS & CONSTRUCTIVE ALGO - 14
+
+HEAP - 14
+
+ST - 17
+
+QU - 3
+
+LL -17
+
+RE - 4
+
+GRA - 34
+
+TR - 14
+
+DP - 107
+
+GRE - 100
+
+BM - 37

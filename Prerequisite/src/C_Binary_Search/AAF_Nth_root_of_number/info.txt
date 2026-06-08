@@ -1,0 +1,17 @@
+N-th root of a number
+https://www.geeksforgeeks.org/dsa/n-th-root-number/
+
+Given two integers n and m, find the n-th root of m.
+The n-th root of m is an integer x such that x^n = m.
+If no such integer exists, return -1.
+
+Examples:
+
+Input: n = 3, m = 27
+Output: 3
+Explanation: 3^3 = 27
+      (1...27)^n   m
+
+Input: n = 3, m = 9
+Output: -1
+Explanation: 3rd root of 9 is not integer.
